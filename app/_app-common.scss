@@ -1,2 +1,76 @@
 @import '~nativescript-theme-core/scss/dark';
 @import '~nativescript-theme-core/scss/index';
+
+$background-dark: #313B44;
+$background-light: #4D555B;
+$accent-primary: #E86F3F;
+$accent-secondary: #66C6BF;
+$text: #F4EBE1;
+
+$title-font-size: 24pt;
+$serif-font-size: 20pt;
+$san-serif-font-size: 18pt;
+$detail-font-size: 14pt;
+
+Page, StackLayout, ScrollView {
+    background-color: $background-dark;
+    color: $text;
+    font-family: 'Raleway', sans-serif;
+    font-size: $san-serif-font-size;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 0 50px;
+}
+
+.header {
+    font-weight: 800;
+    font-size: $title-font-size;
+    padding-bottom: 30px;
+}
+
+.scripture {
+    font-family: serif;
+    font-size: $serif-font-size;
+}
+
+.detail {
+    color: $accent-primary;
+    font-size: $detail-font-size;
+    margin-top: 30px;
+}
+
+.instruction {
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: $background-light;
+    color: $text;
+    font-size: $san-serif-font-size;
+    border-radius: 10px;
+    margin: 0 0 25px 0;
+    padding: 25px 0;
+
+    &:highlighted {
+        background-color: $accent-primary;
+    }
+}
+
+.btn-active {
+    background-color: $accent-primary;
+}
+
+.btn-toggle {
+    width: 48%;
+
+    &.left {
+        margin-right: 2%;
+    }
+
+    &.right {
+        margin-left: 2%;
+    }
+}

@@ -1,14 +1,21 @@
 import { NgModule } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { Routes } from "@angular/router";
-
-import { ItemsComponent } from "./item/items.component";
-import { ItemDetailComponent } from "./item/item-detail.component";
+import { LandingComponent } from './landing/landing.component';
+import { AboutComponent } from './about/about.component';
+import { SacramentComponent } from './ordinances/sacrament/sacrament.component';
+import { BaptismComponent } from "./ordinances/baptism/baptism.component";
+import { ConfirmationComponent } from "./ordinances/confirmation/confirmation.component";
+import { ConsecrateOilComponent } from './ordinances/consecrate-oil/consecrate-oil.component';
 
 const routes: Routes = [
-    { path: "", redirectTo: "/items", pathMatch: "full" },
-    { path: "items", component: ItemsComponent },
-    { path: "item/:id", component: ItemDetailComponent },
+    { path: "", redirectTo: "/landing", pathMatch: "full" },
+    { path: "landing", component: LandingComponent },
+    { path: "about", component: AboutComponent },
+    { path: "sacrament", component: SacramentComponent },
+    { path: "baptism", component: BaptismComponent },
+    { path: "confirmation", component: ConfirmationComponent },
+    { path: "consecrate-oil", component: ConsecrateOilComponent },
 ];
 
 @NgModule({

@@ -1,0 +1,22 @@
+<ns-action-bar></ns-action-bar>
+<StackLayout>
+    <Label class="header container" text="Sacrament"></Label>
+    <ScrollView>
+        <StackLayout class="container">
+            <StackLayout orientation="horizontal">
+                <Button class="btn btn-toggle left" [ngClass]="{'btn-active': breadSelected}" text="Bread" (tap)="tapBread()"></Button>
+                <Button class="btn btn-toggle right" [ngClass]="{'btn-active': waterSelected}" text="Water" (tap)="tapWater()"></Button>
+            </StackLayout>
+
+            <StackLayout *ngIf="breadSelected">
+                <Label class="scripture" text="O God, the Eternal Father, we ask thee in the name of thy Son, Jesus Christ, to bless and sanctify this bread to the souls of all those who partake of it, that they may eat in remembrance of the body of thy Son, and witness unto thee, O God, the Eternal Father, that they are willing to take upon them the name of thy Son, and always remember him and keep his commandments which he has given them; that they may always have his Spirit to be with them. Amen." textWrap="true"></Label>
+                <Label class="detail" text="Doctrine & Covenants 20:77"></Label>
+            </StackLayout>
+        
+            <StackLayout *ngIf="waterSelected">
+                <Label class="scripture" text="O God, the Eternal Father, we ask thee in the name of thy Son, Jesus Christ, to bless and sanctify this [water] to the souls of all those who drink of it, that they may do it in remembrance of the blood of thy Son, which was shed for them; that they may witness unto thee, O God, the Eternal Father, that they do always remember him, that they may have his Spirit to be with them. Amen." textWrap="true"></Label>
+                <Label class="detail" text="Doctrine & Covenants 20:79"></Label>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</StackLayout>
