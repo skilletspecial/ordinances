@@ -12,7 +12,6 @@ import { Color } from "ui/page/page";
 })
 export class ActionBarComponent implements OnInit {
     @Input() showAboutButton: boolean = false;
-    @Input() title: string = '';
     public actionBarBackground: Color = new Color('#313B44');
     public actionBarColor: Color = new Color('#66C6BF');
 
