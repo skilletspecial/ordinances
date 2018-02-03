@@ -7,7 +7,8 @@ $accent-primary: #E86F3F;
 $accent-secondary: #66C6BF;
 $text: #F4EBE1;
 
-$title-font-size: 24pt;
+$title-font-size: 22pt;
+$subtitle-font-size: 18pt;
 $serif-font-size: 20pt;
 $san-serif-font-size: 18pt;
 $detail-font-size: 14pt;
@@ -29,6 +30,14 @@ Page, StackLayout, ScrollView {
     font-weight: 800;
     font-size: $title-font-size;
     padding-bottom: 30px;
+    color: $accent-primary;
+}
+
+.subheader {
+    font-weight: 800;
+    font-size: $subtitle-font-size;
+    margin-bottom: 15px;
+    color: $accent-secondary;
 }
 
 .scripture {

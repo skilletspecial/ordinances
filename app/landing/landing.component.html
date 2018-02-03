@@ -1,15 +1,19 @@
 <ns-action-bar showAboutButton="true"></ns-action-bar>
 <StackLayout class="container">
-    <Label class="header" text="Ordinances"></Label>
     <ScrollView>
-        <StackLayout class="scroll">
+        <StackLayout>
+            <Label class="header" style="text-align:center" text="Ordinances"></Label>
             <Button class="btn ordinance-btn" text="Sacrament" [nsRouterLink]="['/sacrament']"></Button>
             <Button class="btn ordinance-btn" text="Baptism" [nsRouterLink]="['/baptism']"></Button>
             <Button class="btn ordinance-btn" text="Confirmation" [nsRouterLink]="['/confirmation']"></Button>
             <Button class="btn ordinance-btn" text="Consecrating oil" [nsRouterLink]="['/consecrate-oil']"></Button>
-            <Button class="btn ordinance-btn" text="Administer to the sick"></Button>
-            <Button class="btn ordinance-btn" text="Administer to the sick"></Button>
-            <Button class="btn ordinance-btn" text="Administer to the sick"></Button>
+            <Button class="btn ordinance-btn" text="Administering to the sick" [nsRouterLink]="['/administer-to-sick']"></Button>
+            <Button class="btn ordinance-btn" text="Dedicating a home"></Button>
+            <Button class="btn ordinance-btn" text="Dedicating a grave"></Button>
+            <Button class="btn ordinance-btn" text="Naming and blessing children"></Button>
+            <Button class="btn ordinance-btn" text="Conferring the priesthood"></Button>
+            <Button class="btn ordinance-btn" text="Ordaining to priesthood offices"></Button>
+            <Button class="btn ordinance-btn" text="Giving a priesthood blessing"></Button>
         </StackLayout>
     </ScrollView>
 </StackLayout>

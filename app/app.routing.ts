@@ -7,6 +7,7 @@ import { SacramentComponent } from './ordinances/sacrament/sacrament.component';
 import { BaptismComponent } from "./ordinances/baptism/baptism.component";
 import { ConfirmationComponent } from "./ordinances/confirmation/confirmation.component";
 import { ConsecrateOilComponent } from './ordinances/consecrate-oil/consecrate-oil.component';
+import { AdministerToSickComponent } from "./ordinances/administer-to-sick/administer-to-sick.component";
 
 const routes: Routes = [
     { path: "", redirectTo: "/landing", pathMatch: "full" },
@@ -16,6 +17,7 @@ const routes: Routes = [
     { path: "baptism", component: BaptismComponent },
     { path: "confirmation", component: ConfirmationComponent },
     { path: "consecrate-oil", component: ConsecrateOilComponent },
+    { path: "administer-to-sick", component: AdministerToSickComponent },
 ];
 
 @NgModule({

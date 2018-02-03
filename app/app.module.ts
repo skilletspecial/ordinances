@@ -4,6 +4,7 @@ import { AppRoutingModule } from "./app.routing";
 import { AppComponent } from "./app.component";
 import { AboutComponent } from './about/about.component';
 import { ActionBarComponent } from './action-bar/action-bar.component';
+import { OrdinanceComponent } from "./ordinances/ordinance.component";
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
@@ -16,6 +17,7 @@ import { SacramentComponent } from './ordinances/sacrament/sacrament.component';
 import { BaptismComponent } from "./ordinances/baptism/baptism.component";
 import { ConfirmationComponent } from './ordinances/confirmation/confirmation.component';
 import { ConsecrateOilComponent } from './ordinances/consecrate-oil/consecrate-oil.component';
+import { AdministerToSickComponent } from "./ordinances/administer-to-sick/administer-to-sick.component";
 
 @NgModule({
     bootstrap: [
@@ -29,11 +31,13 @@ import { ConsecrateOilComponent } from './ordinances/consecrate-oil/consecrate-o
         AppComponent,
         AboutComponent,
         ActionBarComponent,
+        OrdinanceComponent,
         LandingComponent,
         SacramentComponent,
         BaptismComponent,
         ConfirmationComponent,
-        ConsecrateOilComponent
+        ConsecrateOilComponent,
+        AdministerToSickComponent
     ],
     providers: [
     ],
