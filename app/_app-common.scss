@@ -16,11 +16,18 @@ $detail-font-size: 14pt;
 Page, StackLayout, ScrollView {
     background-color: $background-dark;
     color: $text;
-    font-family: 'Raleway', sans-serif;
+    font-family: sans-serif;
     font-size: $san-serif-font-size;
     margin: 0;
     padding: 0;
 }
+
+.action-image {
+    width: 40;
+    height: 40;
+    vertical-align: center;
+}
+
 
 .container {
     padding: 0 50px;
@@ -30,7 +37,7 @@ Page, StackLayout, ScrollView {
     font-weight: 800;
     font-size: $title-font-size;
     padding-bottom: 30px;
-    color: $accent-primary;
+    color: $text;
 }
 
 .subheader {

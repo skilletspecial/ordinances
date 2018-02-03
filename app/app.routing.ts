@@ -8,6 +8,10 @@ import { BaptismComponent } from "./ordinances/baptism/baptism.component";
 import { ConfirmationComponent } from "./ordinances/confirmation/confirmation.component";
 import { ConsecrateOilComponent } from './ordinances/consecrate-oil/consecrate-oil.component';
 import { AdministerToSickComponent } from "./ordinances/administer-to-sick/administer-to-sick.component";
+import { BlessingComponent } from './ordinances/blessing/blessing.component';
+import { BabyBlessingComponent } from "./ordinances/baby-blessing/baby-blessing.component";
+import { ConferComponent } from './ordinances/confer/confer.component';
+import { GravesComponent } from './ordinances/graves/graves.component';
 
 const routes: Routes = [
     { path: "", redirectTo: "/landing", pathMatch: "full" },
@@ -18,6 +22,10 @@ const routes: Routes = [
     { path: "confirmation", component: ConfirmationComponent },
     { path: "consecrate-oil", component: ConsecrateOilComponent },
     { path: "administer-to-sick", component: AdministerToSickComponent },
+    { path: "blessing", component: BlessingComponent },
+    { path: "baby-blessing", component: BabyBlessingComponent },
+    { path: "confer", component: ConferComponent },
+    { path: "grave", component: GravesComponent },
 ];
 
 @NgModule({
